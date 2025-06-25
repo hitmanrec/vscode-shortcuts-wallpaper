@@ -26,7 +26,7 @@
         min-height: 100vh;
       }
       #wrap {
-        padding: .5vw;
+        padding: .1vw;
         display: flex;
         justify-content: space-around;
         margin: auto;
@@ -61,7 +61,7 @@
       }
       h3 {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        margin-bottom: 0.5vw;
+        margin-bottom: 0.1vw;
       }
       .shortcut {
         border-collapse: collapse;
@@ -217,7 +217,43 @@
             </tr>
           </tbody>
         </table>
+        <h3>Search and replace</h3>
 
+        <table class="shortcut">
+          <tbody>
+            <tr>
+              <th>Ctrl+F</th>
+              <td>Find</td>
+            </tr>
+            <tr>
+              <th>Ctrl+H</th>
+              <td>Replace</td>
+            </tr>
+            <tr>
+              <th>F3 / Shift+F3</th>
+              <td>Find next/previous</td>
+            </tr>
+            <tr>
+              <th>Alt+Enter</th>
+              <td>Select all occurences of Find match</td>
+            </tr>
+            <tr>
+              <th>Ctrl+D</th>
+              <td>Add selection to next Find match</td>
+            </tr>
+            <tr>
+              <th>Ctrl+K Ctrl+D</th>
+              <td>Move last selection to next Find match</td>
+            </tr>
+            <tr>
+              <th>Alt+C / R / W</th>
+              <td>Toggle case-sensitive / regex / whole word</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="column">
         <h3>Navigation</h3>
 
         <table class="shortcut">
@@ -264,44 +300,7 @@
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="column">
         
-        <h3>Search and replace</h3>
-
-        <table class="shortcut">
-          <tbody>
-            <tr>
-              <th>Ctrl+F</th>
-              <td>Find</td>
-            </tr>
-            <tr>
-              <th>Ctrl+H</th>
-              <td>Replace</td>
-            </tr>
-            <tr>
-              <th>F3 / Shift+F3</th>
-              <td>Find next/previous</td>
-            </tr>
-            <tr>
-              <th>Alt+Enter</th>
-              <td>Select all occurences of Find match</td>
-            </tr>
-            <tr>
-              <th>Ctrl+D</th>
-              <td>Add selection to next Find match</td>
-            </tr>
-            <tr>
-              <th>Ctrl+K Ctrl+D</th>
-              <td>Move last selection to next Find match</td>
-            </tr>
-            <tr>
-              <th>Alt+C / R / W</th>
-              <td>Toggle case-sensitive / regex / whole word</td>
-            </tr>
-          </tbody>
-        </table>
 
         <h3>Multi-cursor and selection</h3>
 
@@ -413,40 +412,7 @@
           </tbody>
         </table>
 
-        <h3>Editor management</h3>
-
-        <table class="shortcut">
-          <tbody>
-            <tr>
-              <th>Ctrl+F4, Ctrl+W</th>
-              <td>Close editor</td>
-            </tr>
-            <tr>
-              <th>Ctrl+K F</th>
-              <td>Close folder</td>
-            </tr>
-            <tr>
-              <th>Ctrl+\</th>
-              <td>Split editor</td>
-            </tr>
-            <tr>
-              <th>Ctrl+ 1 / 2 / 3</th>
-              <td>Focus into 1st, 2nd or 3rd editor group</td>
-            </tr>
-            <tr>
-              <th>Ctrl+K Ctrl+ ←/→</th>
-              <td>Focus into previous/next editor group</td>
-            </tr>
-            <tr>
-              <th>Ctrl+Shift+PgUp / PgDn</th>
-              <td>Move editor left/right</td>
-            </tr>
-            <tr>
-              <th>Ctrl+K ← / →</th>
-              <td>Move active editor group</td>
-            </tr>
-          </tbody>
-        </table>
+        
       </div>
 
       <div class="column">
@@ -578,69 +544,37 @@
             </tr>
           </tbody>
         </table>
-
-        <h3>Debug</h3>
-
-        <table class="shortcut">
-          <tbody>
-            <tr>
-              <th>F9</th>
-              <td>Toggle breakpoint</td>
-            </tr>
-            <tr>
-              <th>F5</th>
-              <td>Start/Continue</td>
-            </tr>
-            <tr>
-              <th>Shift+F5</th>
-              <td>Stop</td>
-            </tr>
-            <tr>
-              <th>F11 / Shift+F11</th>
-              <td>Step into/out</td>
-            </tr>
-            <tr>
-              <th>F10</th>
-              <td>Step over</td>
-            </tr>
-            <tr>
-              <th>Ctrl+K Ctrl+I</th>
-              <td>Show hover</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Integrated terminal</h3>
+        <h3>Editor management</h3>
 
         <table class="shortcut">
           <tbody>
             <tr>
-              <th>Ctrl+@</th>
-              <td>Show Terminal</td>
+              <th>Ctrl+F4, Ctrl+W</th>
+              <td>Close editor</td>
             </tr>
             <tr>
-              <th>Ctrl+Shift+@</th>
-              <td>New Terminal</td>
+              <th>Ctrl+K F</th>
+              <td>Close folder</td>
             </tr>
             <tr>
-              <th>Ctrl+C</th>
-              <td>Copy selection</td>
+              <th>Ctrl+\</th>
+              <td>Split editor</td>
             </tr>
             <tr>
-              <th>Ctrl+V</th>
-              <td>Paste into active terminal</td>
+              <th>Ctrl+ 1 / 2 / 3</th>
+              <td>Focus into 1st, 2nd or 3rd editor group</td>
             </tr>
             <tr>
-              <th>Ctrl+↑ / ↓</th>
-              <td>Scroll up/down</td>
+              <th>Ctrl+K Ctrl+ ←/→</th>
+              <td>Focus into previous/next editor group</td>
             </tr>
             <tr>
-              <th>Shift+PgUp / PgDn</th>
-              <td>Scroll page up/down</td>
+              <th>Ctrl+Shift+PgUp / PgDn</th>
+              <td>Move editor left/right</td>
             </tr>
             <tr>
-              <th>Ctrl+Home / End</th>
-              <td>Scroll to top/bottom</td>
+              <th>Ctrl+K ← / →</th>
+              <td>Move active editor group</td>
             </tr>
           </tbody>
         </table>
